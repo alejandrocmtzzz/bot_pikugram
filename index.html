@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>PikuAnÃ³nimo ðŸ‘»</title>
+    <title>PikuAnónimo 👻</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Inter -->
@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
     <!-- Iconos de Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <!-- LibrerÃ­a para convertir HTML a PNG -->
+    <!-- Librería para convertir HTML a PNG -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <!-- Telegram Web App SDK -->
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
@@ -108,18 +108,18 @@
 
         <!-- Vista de Bienvenida -->
         <div id="welcome-view" class="hidden text-center p-8 bg-section backdrop-blur-sm border border-accent/20 rounded-2xl shadow-2xl fade-in">
-            <h1 class="text-5xl font-black">Piku<span class="text-accent">AnÃ³nimo</span> ðŸ‘»</h1>
-            <p class="text-subtitle mt-4 text-lg">Â¡Descubre quÃ© piensan de ti tus amigos en secreto! ðŸ¤«</p>
+            <h1 class="text-5xl font-black">Piku<span class="text-accent">Anónimo</span> 👻</h1>
+            <p class="text-subtitle mt-4 text-lg">¡Descubre qué piensan de ti tus amigos en secreto! 🤫</p>
             <button id="get-link-btn" class="main-btn mt-10 w-full font-bold py-4 px-4 rounded-xl transition-all duration-300 shadow-lg text-lg">
-                âœ¨ Â¡Crear mi Link Secreto! âœ¨
+                ✨ ¡Crear mi Link Secreto! ✨
             </button>
         </div>
 
         <!-- Vista de Bandeja de Entrada -->
         <div id="inbox-view" class="hidden w-full fade-in">
             <div class="text-center mb-6">
-                <h1 class="text-3xl font-bold">ðŸ¤« Tu Link MÃ¡gico ðŸ¤«</h1>
-                <p class="text-sm text-subtitle">PÃ©galo en tu bio y prepÃ¡rate para la magia.</p>
+                <h1 class="text-3xl font-bold">🤫 Tu Link Mágico 🤫</h1>
+                <p class="text-sm text-subtitle">Pégalo en tu bio y prepárate para la magia.</p>
             </div>
             <div class="bg-section p-4 rounded-xl flex items-center gap-4 mb-6 shadow-lg">
                 <input id="shareable-link" type="text" readonly class="bg-black/20 text-theme text-sm p-3 rounded-lg w-full outline-none">
@@ -128,51 +128,51 @@
                 </button>
             </div>
             <button id="logout-btn" class="w-full mb-2 btn-destructive font-bold py-2 px-4 rounded-xl transition-all duration-300">
-                Cerrar SesiÃ³n ðŸ’¥
+                Cerrar Sesión 💥
             </button>
             <button id="share-promo-btn" class="w-full mt-2 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-xl transition-all duration-300">
                 <i class="ph ph-camera-rotate mr-2"></i> Preparar Promo para Historia
             </button>
             
             <div class="mt-8 bg-section p-5 rounded-2xl border border-accent/30 shadow-lg">
-                <h3 class="text-lg font-bold text-center mb-4 text-link">ðŸš€ Â¿CÃ³mo funciona? ðŸš€</h3>
+                <h3 class="text-lg font-bold text-center mb-4 text-link">🚀 ¿Cómo funciona? 🚀</h3>
                 <ol class="space-y-3 text-hint">
                     <li class="flex items-center gap-3">
                         <span class="bg-accent text-white font-bold text-sm rounded-full w-6 h-6 flex items-center justify-center">1</span>
-                        <span>Copia tu link mÃ¡gico. ðŸ“‹</span>
+                        <span>Copia tu link mágico. 📋</span>
                     </li>
                     <li class="flex items-center gap-3">
                         <span class="bg-accent text-white font-bold text-sm rounded-full w-6 h-6 flex items-center justify-center">2</span>
-                        <span>Prepara la imagen de promo. ðŸ“¸</span>
+                        <span>Prepara la imagen de promo. 📸</span>
                     </li>
                     <li class="flex items-center gap-3">
                         <span class="bg-accent text-white font-bold text-sm rounded-full w-6 h-6 flex items-center justify-center">3</span>
-                        <span>SÃºbela a tus historias y pega tu URL. ðŸ“²</span>
+                        <span>Súbela a tus historias y pega tu URL. 📲</span>
                     </li>
                     <li class="flex items-center gap-3">
                         <span class="bg-accent text-white font-bold text-sm rounded-full w-6 h-6 flex items-center justify-center">4</span>
-                        <span>Â¡Espera los mensajes y diviÃ©rtete! ðŸŽ‰</span>
+                        <span>¡Espera los mensajes y diviértete! 🎉</span>
                     </li>
                 </ol>
             </div>
 
             <div id="messages-container" class="space-y-4 mt-6">
                 <div id="no-messages" class="text-center py-10 px-4 bg-section rounded-2xl shadow-lg">
-                    <div class="text-5xl">ðŸ¦—...ðŸ¦—</div>
-                    <h2 class="mt-4 text-xl font-semibold">Â¡AÃºn no hay chismecito!</h2>
+                    <div class="text-5xl">🦗...🦗</div>
+                    <h2 class="mt-4 text-xl font-semibold">¡Aún no hay chismecito!</h2>
                     <p class="text-hint mt-1">Comparte tu link para que lluevan los secretos.</p>
                 </div>
-                <!-- Los mensajes se insertarÃ¡n aquÃ­ -->
+                <!-- Los mensajes se insertarán aquí -->
             </div>
         </div>
 
-        <!-- Vista PÃºblica para Enviar Mensaje -->
+        <!-- Vista Pública para Enviar Mensaje -->
         <div id="public-view" class="hidden text-center p-8 bg-section backdrop-blur-sm border border-accent/20 rounded-2xl shadow-2xl fade-in">
-            <h1 class="text-4xl font-bold mt-4">ðŸ’Œ Deja tu Mensaje Secreto ðŸ’Œ</h1>
-            <p id="public-view-recipient" class="text-subtitle mt-2">Le estÃ¡s escribiendo a <span class="font-bold text-link">...</span></p>
-            <textarea id="message-input" class="mt-6 w-full bg-black/20 p-4 rounded-lg h-32 resize-none outline-none focus:ring-2 focus:ring-accent placeholder:text-hint text-theme" placeholder="Escribe algo bueno, malo o divertido... Â¡es anÃ³nimo! ðŸ˜‰"></textarea>
+            <h1 class="text-4xl font-bold mt-4">💌 Deja tu Mensaje Secreto 💌</h1>
+            <p id="public-view-recipient" class="text-subtitle mt-2">Le estás escribiendo a <span class="font-bold text-link">...</span></p>
+            <textarea id="message-input" class="mt-6 w-full bg-black/20 p-4 rounded-lg h-32 resize-none outline-none focus:ring-2 focus:ring-accent placeholder:text-hint text-theme" placeholder="Escribe algo bueno, malo o divertido... ¡es anónimo! 😉"></textarea>
             <button id="send-message-btn" class="mt-4 w-full btn-theme font-bold py-3 px-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg">
-                <span id="send-btn-text">Enviar con Sello Secreto ðŸ“¬</span>
+                <span id="send-btn-text">Enviar con Sello Secreto 📬</span>
                 <i id="send-spinner" class="ph ph-spinner-gap text-xl animate-spin hidden"></i>
             </button>
         </div>
@@ -194,7 +194,7 @@
                 </div>
                 
                 <div id="reply-input-area" class="mt-4">
-                    <textarea id="reply-input" class="w-full bg-gray-100 border border-gray-300 p-3 rounded-lg h-24 resize-none outline-none focus:ring-2 focus:ring-indigo-500 placeholder-gray-500" placeholder="Escribe tu respuesta aquÃ­..."></textarea>
+                    <textarea id="reply-input" class="w-full bg-gray-100 border border-gray-300 p-3 rounded-lg h-24 resize-none outline-none focus:ring-2 focus:ring-indigo-500 placeholder-gray-500" placeholder="Escribe tu respuesta aquí..."></textarea>
                 </div>
                 
                 <button id="share-story-btn" class="mt-4 w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-xl transition-all duration-300 shadow-lg">
@@ -211,18 +211,18 @@
     <div id="screenshot-container" class="fixed -left-[9999px] top-0 w-[360px] p-1">
         <div class="w-full h-full flex flex-col justify-center items-center p-8 text-center box-border text-white">
              <div class="bg-black/20 backdrop-blur-sm p-6 rounded-2xl w-full">
-                 <p class="text-sm font-bold opacity-75">ðŸ¤” Le preguntaron a <b id="screenshot-user"></b>...</p>
+                 <p class="text-sm font-bold opacity-75">🤔 Le preguntaron a <b id="screenshot-user"></b>...</p>
                  <p id="screenshot-q" class="font-extrabold my-2"></p>
              </div>
              <div class="my-4">
                  <i class="ph ph-arrow-fat-down text-4xl text-white/50"></i>
              </div>
              <div class="bg-black/20 backdrop-blur-sm p-6 rounded-2xl w-full">
-                 <p class="text-sm font-bold opacity-75">ðŸ˜Ž Y respondiÃ³...</p>
+                 <p class="text-sm font-bold opacity-75">😎 Y respondió...</p>
                  <p id="screenshot-a" class="font-extrabold my-2"></p>
              </div>
              <div class="mt-auto text-lg font-bold text-white/80">
-                 PikuAnÃ³nimo ðŸ‘»
+                 PikuAnónimo 👻
              </div>
         </div>
     </div>
@@ -230,17 +230,17 @@
     <!-- Contenedor Oculto para Screenshot de Promo -->
     <div id="promo-screenshot-container" class="hidden fixed -left-[9999px] top-0 w-[360px] h-[640px] p-1" style="background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);">
         <div class="w-full h-full flex flex-col justify-center items-center p-8 text-center box-border text-white">
-            <h2 class="text-5xl font-black text-black/70 mb-8 leading-tight">Â¡EnvÃ­ame un mensaje secreto!</h2>
-            <div class="text-8xl mb-8 animate-bounce">ðŸ¤«</div>
-            <p class="text-2xl font-bold text-black/60 mb-8">Â¡AtrÃ©vete a preguntar lo que sea!</p>
+            <h2 class="text-5xl font-black text-black/70 mb-8 leading-tight">¡Envíame un mensaje secreto!</h2>
+            <div class="text-8xl mb-8 animate-bounce">🤫</div>
+            <p class="text-2xl font-bold text-black/60 mb-8">¡Atrévete a preguntar lo que sea!</p>
             <div class="mt-auto w-full">
-                 <p class="text-sm font-bold text-black/50 mb-2">ðŸ‘‡ Pulsa el link en la historia ðŸ‘‡</p>
+                 <p class="text-sm font-bold text-black/50 mb-2">👇 Pulsa el link en la historia 👇</p>
                  <div class="bg-white/50 p-4 rounded-full w-full text-black/70 font-semibold shadow-lg">
-                     Pega tu link aquÃ­ al crear la historia
+                     Pega tu link aquí al crear la historia
                  </div>
             </div>
             <div class="mt-8 text-lg font-bold text-black/60">
-                PikuAnÃ³nimo ðŸ‘»
+                PikuAnónimo 👻
             </div>
         </div>
     </div>
@@ -254,7 +254,7 @@
             <p id="confirm-modal-text" class="text-lg text-theme mb-6"></p>
             <div class="flex gap-4">
                 <button id="confirm-modal-no" class="w-full bg-gray-600 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded-xl transition-all">No</button>
-                <button id="confirm-modal-yes" class="w-full btn-theme font-bold py-2 px-4 rounded-xl transition-all">SÃ­</button>
+                <button id="confirm-modal-yes" class="w-full btn-theme font-bold py-2 px-4 rounded-xl transition-all">Sí</button>
             </div>
         </div>
     </div>
@@ -284,7 +284,7 @@
         import { getAuth, signInAnonymously, onAuthStateChanged, browserLocalPersistence, setPersistence, signOut } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js";
         import { getFirestore, collection, addDoc, query, onSnapshot, serverTimestamp, orderBy, doc, updateDoc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js";
 
-        // --- INICIALIZACIÃ“N DE TELEGRAM Y FIREBASE ---
+        // --- INICIALIZACIÓN DE TELEGRAM Y FIREBASE ---
         const tg = window.Telegram.WebApp;
         const app = initializeApp(firebaseConfig);
         const auth = getAuth(app);
@@ -318,7 +318,7 @@
 
         // --- ESTADO DE LA APP ---
         let firebaseUid = null;
-        let telegramUsername = 'Usuario AnÃ³nimo';
+        let telegramUsername = 'Usuario Anónimo';
         let unsubscribeMessages = null;
         let currentMessageId = null;
 
@@ -442,7 +442,7 @@
             card.className = 'message-card p-5 bg-section rounded-2xl shadow-lg fade-in border-l-4 border-accent cursor-pointer hover:bg-black/20 transition-all duration-300 transform hover:-translate-y-1 flex justify-between items-center';
             const textContent = document.createElement('div');
             textContent.innerHTML = `
-                <p class="text-theme truncate">ðŸ’Œ ${message.text}</p>
+                <p class="text-theme truncate">💌 ${message.text}</p>
                 <span class="text-xs text-hint mt-1 block">${message.createdAt ? message.createdAt.toDate().toLocaleString('es-ES') : 'Ahora mismo'}</span>
             `;
             card.appendChild(textContent);
@@ -501,22 +501,22 @@
 
             } catch (error) {
                 console.error("Authentication or Linking Error:", error);
-                showToast(`Error de autenticaciÃ³n: ${error.message}`, 'error');
+                showToast(`Error de autenticación: ${error.message}`, 'error');
                 return null;
             }
         }
 
-        // --- LÃ“GICA DE INICIO ---
+        // --- LÓGICA DE INICIO ---
         async function initializeAppLogic() {
             const startParam = tg.initDataUnsafe.start_param;
 
             if (startParam) {
-                // MODO INVITACIÃ“N: Abrir enlace para enviar un mensaje.
+                // MODO INVITACIÓN: Abrir enlace para enviar un mensaje.
                 showView('public');
-                // Se necesita un inicio de sesiÃ³n anÃ³nimo para escribir en la base de datos.
+                // Se necesita un inicio de sesión anónimo para escribir en la base de datos.
                 signInAnonymously(auth).catch(e => {
-                    console.error("Error en inicio de sesiÃ³n anÃ³nimo para remitente:", e);
-                    showToast("No se pudo iniciar sesiÃ³n para enviar. Intenta de nuevo.", "error");
+                    console.error("Error en inicio de sesión anónimo para remitente:", e);
+                    showToast("No se pudo iniciar sesión para enviar. Intenta de nuevo.", "error");
                 });
                 
                 // Obtiene y muestra el nombre del destinatario.
@@ -530,14 +530,14 @@
                     showToast("No se pudo encontrar al destinatario.", "error");
                 }
             } else {
-                // MODO PROPIETARIO: El dueÃ±o de la cuenta abre su propia app.
+                // MODO PROPIETARIO: El dueño de la cuenta abre su propia app.
                 onAuthStateChanged(auth, async (user) => {
                     if (user) {
                         const telegramId = String(tg.initDataUnsafe.user?.id);
                         if (!telegramId || telegramId === 'undefined') {
                             showView('welcome');
                             signOut(auth);
-                            showToast("Error de sesiÃ³n. Por favor, reinicia la app.", "error");
+                            showToast("Error de sesión. Por favor, reinicia la app.", "error");
                             return;
                         }
                         firebaseUid = user.uid;
@@ -560,18 +560,18 @@
         });
         
         logoutBtn.addEventListener('click', () => {
-            showCustomConfirm("Â¿Seguro que quieres cerrar sesiÃ³n? Tu link seguirÃ¡ funcionando pero no podrÃ¡s ver los mensajes aquÃ­.", (ok) => {
+            showCustomConfirm("¿Seguro que quieres cerrar sesión? Tu link seguirá funcionando pero no podrás ver los mensajes aquí.", (ok) => {
                 if(ok) {
                      signOut(auth);
                      showView('welcome');
-                     showToast('Has cerrado sesiÃ³n.', 'info');
+                     showToast('Has cerrado sesión.', 'info');
                 }
             });
         });
 
         shareLinkBtn.addEventListener('click', () => {
             const link = shareableLinkInput.value;
-            const text = `Â¡EnvÃ­ame un mensaje anÃ³nimo! ðŸ¤« Nadie sabrÃ¡ que fuiste tÃº... Â¿quÃ© me quieres decir? ðŸ‘€\n\n${link}`;
+            const text = `¡Envíame un mensaje anónimo! 🤫 Nadie sabrá que fuiste tú... ¿qué me quieres decir? 👀\n\n${link}`;
             tg.openTelegramLink(`https://t.me/share/url?url=${encodeURIComponent(link)}&text=${encodeURIComponent(text)}`);
         });
 
@@ -597,8 +597,8 @@
                 
                 // Muestra instrucciones claras en el nuevo modal
                 showCustomAlert(
-                    'Â¡Listo para Compartir!', 
-                    '1. La imagen de promo se ha guardado en tu galerÃ­a.\n\n2. Tu link mÃ¡gico se ha copiado.\n\nAhora, ve a Telegram, crea una historia con la imagen y pega el link.'
+                    '¡Listo para Compartir!', 
+                    '1. La imagen de promo se ha guardado en tu galería.\n\n2. Tu link mágico se ha copiado.\n\nAhora, ve a Telegram, crea una historia con la imagen y pega el link.'
                 );
 
             } catch (error) {
@@ -612,7 +612,7 @@
 
         sendMessageBtn.addEventListener('click', async () => {
             const messageText = messageInput.value.trim();
-            if (!messageText) { return showToast('Â¡Oye! No puedes enviar un mensaje vacÃ­o.', 'error'); }
+            if (!messageText) { return showToast('¡Oye! No puedes enviar un mensaje vacío.', 'error'); }
 
             sendMessageBtn.disabled = true;
             document.getElementById('send-btn-text').classList.add('hidden');
@@ -630,10 +630,10 @@
                 await addDoc(messagesRef, { text: messageText, createdAt: serverTimestamp() });
                 
                 messageInput.value = '';
-                showToast('Â¡Enviado! Tu secreto estÃ¡ a salvo. ðŸ˜‰', 'success');
+                showToast('¡Enviado! Tu secreto está a salvo. 😉', 'success');
             } catch (error) {
                 console.error("Error enviando mensaje:", error);
-                showToast(`Uups, algo fallÃ³: ${error.message}`, 'error');
+                showToast(`Uups, algo falló: ${error.message}`, 'error');
             } finally {
                 sendMessageBtn.disabled = false;
                 document.getElementById('send-btn-text').classList.remove('hidden');
@@ -692,7 +692,7 @@
                 document.body.removeChild(downloadLink);
                 URL.revokeObjectURL(downloadLink.href);
                 
-                showCustomAlert('Â¡Imagen Guardada!', 'La imagen de la conversaciÃ³n se ha guardado en tu galerÃ­a.');
+                showCustomAlert('¡Imagen Guardada!', 'La imagen de la conversación se ha guardado en tu galería.');
 
             } catch (error) {
                 console.error("Error al generar/compartir la imagen:", error);
@@ -704,7 +704,7 @@
             }
         });
 
-        // --- INICIALIZACIÃ“N ---
+        // --- INICIALIZACIÓN ---
         try {
             tg.ready();
             tg.expand();
